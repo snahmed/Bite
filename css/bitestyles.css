@@ -1,0 +1,230 @@
+body {
+	background: white;
+	color:black;
+	font-family: 'Karla', sans-serif; 
+	font-size: 16px;
+}
+
+a, a:visited {
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;    
+    transition: all 0.3s;
+}
+
+a:hover {
+	color:#D17B75;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;    
+    transition: all 0.3s;
+}
+
+a.active {
+	background-color:#CA9B2C;
+	color:#fff;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;    
+    transition: all 0.3s;
+}
+
+h1 {
+	font-family: Didot, Garamond, serif;
+	font-weight: bold;
+	font-size: 2.2em;
+	line-height: 120%;
+	margin:0em;
+	padding: 0.5em 0em;
+}
+
+nav {
+	padding-bottom: 1em;
+}
+
+nav a {
+	color:#CA9B2C;
+}
+
+.navbar-header {
+	padding-bottom: 1.9em;
+}
+
+.navbar-toggle .icon-bar {
+	margin-top: 0.6em;
+	width:30px;
+	height:6px;
+}
+
+nav span {
+	background-color:#CA9B2C;
+}
+
+.webheader {
+	margin-bottom: 1em; 
+}
+
+h2 {
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding-left: 0px;
+}
+
+button {
+	background-color:#72384B;
+	border:none;
+	height:auto;
+	padding: 9px 15px;
+	font-family: Didot, Garamond, serif;
+	font-size: 24px;
+	letter-spacing: 0.5px;
+	margin-bottom: 2em;
+}
+
+button a{
+	color:#fff;
+}
+
+::selection {
+	color:white;
+	background-color: #D17B75;
+}
+
+#label {
+	margin-top: 9px;
+    width: 20px;
+    z-index: 20;}
+
+#input {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 450px;
+    height: 60px;
+    z-index: 5;
+    overflow: hidden;
+}
+#input input {
+    display: block;
+    position: absolute;
+    margin: 0;
+    border: none;
+    border-bottom: 2px solid #CA9B2C;
+    color: #aaa;
+    font-size: 18px;
+    backface-visibility: none;
+    border-radius: 0;
+    transition: left 0;
+}
+#input input:focus {
+    outline: none
+}
+#input.focus {
+    z-index: 20;
+}
+#input.focus input {
+    left: 0;
+    transition: left 0.3s;
+}
+
+
+.discovermore{
+	background-color: #D17B75;
+	color: white;	
+	padding-bottom: 44em;
+}
+
+.discovermore ul {
+	padding: 20px;
+	margin-left: 0px;
+}
+
+.discovermore h3 {
+	padding-top: 1em;
+	font-family: Didot;
+	font-size: 2.1em;
+	margin-left: 1.5em;
+}
+
+.discovermore h6 {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.discovermore img{
+	border-radius: 50%;
+}
+
+#discovercircle {
+		padding: 10px;
+	}
+
+#discovercircle a {
+	font-size: 1.2em;
+	font-weight: 700;
+	color:#D17B75;
+}
+
+#discovercircle a:hover {
+	color:#72384B;
+}
+
+footer {
+	background-color:#444444;
+}
+
+.social img {
+	display: block;
+	float:left;
+	width: 35px;
+}
+
+
+
+
+
+@media (min-width: 769px){
+
+	h1{
+	font-family: Didot, Garamond, serif;
+	font-weight: bold;
+	color:white;
+	font-size: 48px;}
+
+	.webheader {
+	margin-top: -12em;
+	width: 9em;}
+
+	.discovermore{
+	background-color: #D17B75;
+	color: white;	
+	padding-bottom: 44em;}
+
+	#discovercircle {
+	width: 155px;
+	height:155px;
+	padding: 20px;
+	padding-top: 50px;
+	background-color: #fff;
+	text-align: center;
+	border-radius: 50%;}
+
+	.nav-justified {
+		width:40%;}
+
+	.navbar-brand {
+		padding-top: 12px;
+	}
+
+}
+
+
+
