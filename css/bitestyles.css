@@ -5,6 +5,10 @@ body {
 	font-size: 16px;
 }
 
+img {
+	max-width: 100%;
+}
+
 a, a:visited {
 	text-decoration: none;
 	-webkit-transition: all 0.3s;
@@ -41,7 +45,7 @@ h1 {
 	font-size: 2.2em;
 	line-height: 120%;
 	margin:0em;
-	padding: 0.5em 0em;
+	padding: 0.4em 0.8em;
 }
 
 nav {
@@ -52,22 +56,25 @@ nav a {
 	color:#CA9B2C;
 }
 
-.navbar-header {
-	padding-bottom: 1.9em;
+.navbar-header button{
+	width: 30%;
+}
+
+.navbar-toggle{
+	padding:10px;
+	width:3em;
+	padding-bottom: 0.8em;
 }
 
 .navbar-toggle .icon-bar {
 	margin-top: 0.6em;
-	width:30px;
+	width:1.5em;
 	height:6px;
 }
 
+
 nav span {
 	background-color:#CA9B2C;
-}
-
-.webheader {
-	margin-bottom: 1em; 
 }
 
 h2 {
@@ -137,19 +144,14 @@ button a{
 .discovermore{
 	background-color: #D17B75;
 	color: white;	
-	padding-bottom: 44em;
-}
-
-.discovermore ul {
-	padding: 20px;
-	margin-left: 0px;
+	padding: 1.7em 0em;
 }
 
 .discovermore h3 {
-	padding-top: 1em;
 	font-family: Didot;
-	font-size: 2.1em;
-	margin-left: 1.5em;
+	font-size: 2.2em;
+	margin-left: 2.3em;
+	margin-bottom: 0.7em;
 }
 
 .discovermore h6 {
@@ -163,32 +165,54 @@ button a{
 	border-radius: 50%;
 }
 
-#discovercircle {
-		padding: 10px;
-	}
-
-#discovercircle a {
-	font-size: 1.2em;
-	font-weight: 700;
-	color:#D17B75;
+.discovermore li {
+	margin-bottom: 0.8em;
 }
 
-#discovercircle a:hover {
+#discovermore a:hover {
 	color:#72384B;
 }
 
 footer {
+	text-align: center;
 	background-color:#444444;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 3em;
+	padding-left: 2em;
+}
+
+footer a{
+	color: white;
+}
+
+footer img {
+	padding-bottom: 1em;
 }
 
 .social img {
 	display: block;
 	float:left;
-	width: 35px;
+	margin-right: 10px;
+	width: 40px;
 }
 
+.footerlogo {
+	padding-left: 0.5em;
+}
 
+.homesection{
+		text-align: center;
+	}
 
+	.secondsec {
+		padding: 0em;
+		margin: 0em;
+	}
+
+	.secondsec img{
+		float:right;
+	}
 
 
 @media (min-width: 769px){
@@ -197,32 +221,64 @@ footer {
 	font-family: Didot, Garamond, serif;
 	font-weight: bold;
 	color:white;
-	font-size: 48px;}
+	font-size: 50px;}
 
-	.webheader {
-	margin-top: -12em;
-	width: 9em;}
+	.webheader h1 {
+		width: 450px;
+		margin-left: 1em;
+		margin-top: -4.8em;
+		margin-bottom: 0.4em;
+	}
+
+	.homesection{
+		text-align: center;
+		padding-top: 9em;
+	}
+
+	.secondsec {
+		padding: 0em;
+		margin: 0em;
+	}
+
+	.secondsec img{
+		float:right;
+	}
+
+.footer {
+	padding-top:2em;
+}
+
+.social {
+	padding-left: 50px;
+}
+
+.social img {
+	display: block;
+	float:left;
+	margin-right: 10px;
+	width: 40px;
+}
 
 	.discovermore{
+	margin-right: 0em;
+	margin-left: 0em;
 	background-color: #D17B75;
 	color: white;	
-	padding-bottom: 44em;}
-
-	#discovercircle {
-	width: 155px;
-	height:155px;
-	padding: 20px;
-	padding-top: 50px;
-	background-color: #fff;
-	text-align: center;
-	border-radius: 50%;}
+	padding: 6em 2em;}
 
 	.nav-justified {
-		width:40%;}
+		width:50%;}
+
+	nav ul {
+		padding-top: 1.3em;
+	}
 
 	.navbar-brand {
-		padding-top: 12px;
+		padding-top: 0.6em;
 	}
+
+	#search {
+		padding-top: 1.8em;}
 
 }
 
