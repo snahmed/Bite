@@ -28,7 +28,7 @@ a:hover {
     transition: all 0.3s;
 }
 
-a.active {
+ nav a.active {
 	background-color:#CA9B2C;
 	color:#fff;
 	text-decoration: none;
@@ -42,7 +42,7 @@ a.active {
 h1 {
 	font-family: Didot, Garamond, serif;
 	font-weight: bold;
-	font-size: 2.2em;
+	font-size: 2.4em;
 	line-height: 120%;
 	margin:0em;
 	padding: 0.4em 0.8em;
@@ -52,26 +52,63 @@ nav {
 	padding-bottom: 1em;
 }
 
-nav a {
-	color:#CA9B2C;
+.nav-justified {
+	padding-top: 1em;
+
 }
 
 .navbar-header button{
+	margin-top: 13px;
 	width: 30%;
 }
 
 .navbar-toggle{
 	padding:10px;
-	width:3em;
+	width:3.2em;
 	padding-bottom: 0.8em;
 }
 
 .navbar-toggle .icon-bar {
 	margin-top: 0.6em;
-	width:1.5em;
+	width:1.8em;
 	height:6px;
 }
 
+.navbar-brand {
+	padding-left: 35px;
+}
+
+.nav>li>a {
+	color:#CA9B2C;
+	border: 5px solid transparent;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;    
+    transition: all 0.3s;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: #CA9B2C;
+	border: 5px solid #CA9B2C;
+	color:white;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;    
+    transition: all 0.3s;
+}
+
+.nav>li>a.active {
+	background-color: transparent;
+	border: 5px solid #CA9B2C;
+	color:#CA9B2C;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;    
+    transition: all 0.3s;
+}
 
 nav span {
 	background-color:#CA9B2C;
@@ -79,11 +116,12 @@ nav span {
 
 h2 {
 	font-weight: 700;
+	line-height: 130%;
 	letter-spacing: 1px;
 	padding-left: 0px;
 }
 
-button {
+.homesection button {
 	background-color:#72384B;
 	border:none;
 	height:auto;
@@ -92,10 +130,32 @@ button {
 	font-size: 24px;
 	letter-spacing: 0.5px;
 	margin-bottom: 2em;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;    
+    transition: all 0.3s;
 }
 
-button a{
+.homesection button a, a:hover{
 	color:#fff;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;    
+    transition: all 0.3s;
+}
+
+.homesection button:hover {
+	background-color:#D17B75;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;    
+    transition: all 0.3s;
 }
 
 ::selection {
@@ -103,27 +163,28 @@ button a{
 	background-color: #D17B75;
 }
 
+
 #label {
-	margin-top: 9px;
     width: 20px;
+    margin-left: 10px;
     z-index: 20;}
 
 #input {
     position: absolute;
-    top: 0;
-    left: 60px;
+    top:0px;
+    left: 40px;
     width: 450px;
     height: 60px;
     z-index: 5;
     overflow: hidden;
 }
-#input input {
+input {
     display: block;
     position: absolute;
     margin: 0;
     border: none;
     border-bottom: 2px solid #CA9B2C;
-    color: #aaa;
+    color: #000;
     font-size: 18px;
     backface-visibility: none;
     border-radius: 0;
@@ -140,7 +201,6 @@ button a{
     transition: left 0.3s;
 }
 
-
 .discovermore{
 	background-color: #D17B75;
 	color: white;	
@@ -150,7 +210,7 @@ button a{
 .discovermore h3 {
 	font-family: Didot;
 	font-size: 2.2em;
-	margin-left: 2.3em;
+	margin-left: 2.5em;
 	margin-bottom: 0.7em;
 }
 
@@ -173,6 +233,44 @@ button a{
 	color:#72384B;
 }
 
+
+
+.recipetop input {
+	margin-left: -25px;
+	max-width: 100%;
+    height: 60px;
+    border: 4px solid #889A64;
+}
+
+.dropdown {
+	padding-top: 1em;
+	padding-bottom: 1.5em;
+}
+
+.dropdown select {
+	width: 140px;
+	margin-left: 8px;
+	padding: 1em;
+	border: 2px solid #889A64;
+	border-radius: 0%;
+}
+
+.recipesindex h6 {
+	font-family: Didot;
+	font-size: 1.6em;}
+
+.recipesindex li {
+	margin-bottom: 2em; 
+}
+
+.recdesc{
+	padding:0.6em 0em;
+	padding-left: 1em;
+	background-color: #EDEAE6;
+}
+
+
+
 footer {
 	text-align: center;
 	background-color:#444444;
@@ -184,6 +282,10 @@ footer {
 
 footer a{
 	color: white;
+}
+
+footer a:hover{
+	color: #ccc;
 }
 
 footer img {
@@ -205,14 +307,17 @@ footer img {
 		text-align: center;
 	}
 
-	.secondsec {
+.secondsec {
 		padding: 0em;
 		margin: 0em;
 	}
 
-	.secondsec img{
+.secondsec img{
 		float:right;
 	}
+
+
+
 
 
 @media (min-width: 769px){
@@ -244,12 +349,25 @@ footer img {
 		float:right;
 	}
 
+.navbar-brand {
+	padding-left: 10px;
+}
+
 .footer {
 	padding-top:2em;
 }
 
+
+.backtop {
+	padding-left:73px;
+}
+
+.footerlogo {
+	padding-left: 48px;
+}
+
 .social {
-	padding-left: 50px;
+	padding-left: 60px;
 }
 
 .social img {
@@ -266,20 +384,52 @@ footer img {
 	color: white;	
 	padding: 6em 2em;}
 
-	.nav-justified {
-		width:50%;}
+	.discovermore h3 {
+	text-align: center;
+	font-size: 2.7em;
+	padding-bottom: 0.5em;
+	margin-left: 0em;}
 
-	nav ul {
-		padding-top: 1.3em;
-	}
 
 	.navbar-brand {
 		padding-top: 0.6em;
 	}
 
-	#search {
-		padding-top: 1.8em;}
+	.navbar-collapse {
+		margin-left:5em;
+		padding-top: 0.5em;
+		width:60%;
+	}
 
+	nav {
+	padding-bottom: 0.8em;}
+
+	nav ul {
+		float:right;
+	}
+
+	.nav>li:nth-child(4) {
+		padding-top: 0.2em;
+	}
+
+.recipetop h1 {
+	margin-top: -13.5em;
+	text-align: center;
+}
+
+.recipetop input {
+	margin-left: -35px;
+	max-width: 100%;
+    height: 60px;
+    border: 4px solid #889A64;}
+
+.recdesc{
+	height: 8em;}
+
+p {
+	margin-top: 33em;
+}
+	
 }
 
 

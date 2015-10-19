@@ -6,8 +6,6 @@
   <meta charset = "UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- missing other meta tag? -->
-
   <title>Bite: Gourmet Made Easy</title>
 
   <link rel="icon" type="image/png" href="images/biteicon.png">
@@ -47,12 +45,9 @@
 
     <nav class="col-md-offset-1 col-md-10 row" id="top">
 
-
-      <a class="navbar-brand pull-left col-md-2 col-sm-3 col-xs-6 row" href="index.html">
-
+      <a class="navbar-brand pull-left col-md-2 col-sm-2 col-xs-6 row" href="index.html">
         <img src="images/bitelogo.png" alt="Bite logo" class="img-responsive">
       </a>
-
 
        <div class="navbar-header col-xs-6">
           <button class="navbar-toggle collapsed pull-left col-xs-1 col-sm-2" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
@@ -64,32 +59,34 @@
       </div> <!--end Mobile Navigation-->
 
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 pull-right">
+      
+        <div class="collapse navbar-collapse col-xs-12" id="bs-example-navbar-collapse-1">
 
+          <ul class="list-unstyled nav nav-justified">
+              <li><a href="recipes.html">Recipes</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Travel</a></li>
+              <li>
 
-      <form id="search" action="#" method="post" class="col-md-3 pull-right">
+          <form id="search" action="#" method="post">
 
+            <div id="label">
+              <label for="search-terms" id="search-label">
+                <img src="images/searchicon.png" alt="search" class="img-responsive">
+              </label>
+            </div>
 
-        <div id="label">
-          <label for="search-terms" id="search-label">
-            <img src="images/searchicon.png" alt="search" class="img-responsive">
-          </label>
-        </div>
+            <div id="input" class="pull-right">
+              <input type="text" name="search" id="search" placeholder="Find a recipe...">
+            </div>
 
+          </form>
+              </li>
 
-          <div id="input" class="pull-right">
-            <input type="text" name="search" id="search" placeholder="Find a recipes...">
-          </div>
-      </form>
+          </ul> 
 
-
-        <ul class="list-unstyled nav nav-justified col-md-2 pull-right">
-          <li><a href="recipes.html">Recipes</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Travel</a></li>
-        </ul>
-
-      </div> <!--end Navigation Links-->
+        
+        </div> <!--end Navigation Links-->
 
 
   </nav>
@@ -97,18 +94,32 @@
 
 
 
+   <div class="recipetop">
+
+     <img src="images/rosemarysodasearch.jpg" alt="rosecloseup" class="img-responsive"> 
+      <h1>Search Recipes</h1>
 
 
-    <img src="images/rosemarysodasearch.jpg" alt="rosecloseup" class="img-responsive"> 
-    <h1>Search Recipes</h1>
+        <form id="search" action="#" method="post">
+
+          <label for="search-terms" id="search-label" class="col-xs-3 col-md-offset-3 col-md-1">
+            <img src="images/searchiconbox.png" alt="search" class="img-responsive">
+          </label>
+
+          <input type="text" name="search" id="search" placeholder="Find a recipe..." class="col-xs-9 col-md-5">
+
+        </form>
+
+   </div>
 
 
 
 
-      <p class="col-md-offset-1">Sort by: 
+      <p class="dropdown col-xs-12 col-md-offset-4">
+        Sort by: 
 
         <select>
-          <option value="Course">Course/Meal</option>
+          <option value="Course">Course</option>
           <option value="breakfast">Breakfast</option>
           <option value="lunch">Lunch</option>
           <option value="brunch">Brunch</option>
@@ -139,78 +150,180 @@
 
 
 
-      <div class="col-md-offset-1 col-md-10">
+      <div class="col-md-offset-2 col-md-10 recipesindex">
 
         <ul class="list-unstyled">
 
-          <li class="col-md-5">
-            <img src="#" alt="Rosé Sangria" class="img-responsive">
-            <h6>Rosé Sangria</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 5</p>
-          </li>
+
 
           <li class="col-md-5">
-            <img src="#" alt="Avocado Pasta" class="img-responsive">
-            <h6>Avocado Pasta</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 3</p>
+            <img src="images/reciperose.jpg" alt="Rosé Sangria" class="img-responsive">
+
+            <div class="recdesc">
+
+              <h6 class="col-xs-12">Rosé Sangria</h6>
+
+              <div class="col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 5</p>
+
+            </div>
           </li>
 
-          <li class="col-md-5">
-            <img src="#" alt="Apple Tart" class="img-responsive">
-            <h6>Apple Tart</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 8</p>
-          </li>
+
 
           <li class="col-md-5">
-            <img src="#" alt="Blueberry Ginger Ale" class="img-responsive">
-            <h6>Blueberry Ginger Ale</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 11</p>
+            <img src="images/recipeavocadopasta.jpg" alt="Avocado Pasta" class="img-responsive">
+
+
+            <div class="recdesc">
+              <h6 class="col-xs-12">Avocado Pasta</h6>
+
+              <div class="col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 3</p>
+
+            </div>
+
+
           </li>
+
+
+
+          <li class="col-md-5">
+            <img src="images/recipeappletart.jpg" alt="Apple Tart" class="img-responsive">
+            
+
+            <div class="recdesc">
+              <h6 class="col-xs-12">Apple Tart</h6>
+
+              <div class="col-xs-3">
+              <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 8</p>
+
+            </div>
+
+          </li>
+
+
+
+          <li class="col-md-5">
+            <img src="images/recipegingerale.jpg" alt="Blueberry Ginger Ale" class="img-responsive">
+
+
+          <div class="recdesc">
+            <h6 class="col-xs-12">Blueberry Ginger Ale</h6>
+
+              <div class="col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 11</p>
+
+          </div>
+
+          </li>
+
+
           
           <li class="col-md-5">
-            <img src="#" alt="Rosemary Soda" class="img-responsive">
-            <h6>Rosemary Soda</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 17</p>
+            <img src="images/recipesoda.jpg" alt="Rosemary Soda" class="img-responsive">
+
+            <div class="recdesc">
+              <h6 class="col-xs-12">Rosemary Soda</h6>
+
+              <div class="col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 17</p>
+
+            </div>
+
           </li>
 
+
+
           <li class="col-md-5">
-            <img src="#" alt="Gluten-Free Brownies" class="img-responsive">
-            <h6>Gluten-Free Brownies</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 13</p>
+            <img src="images/recipebrownies.jpg" alt="Gluten-Free Brownies" class="img-responsive">
+
+            <div class="recdesc">
+              <h6 class="col-xs-12">Gluten-Free Brownies</h6>
+
+              <div class="col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 13</p>
+            </div>
+
           </li>
           
-          <li class="col-md-5">
-            <img src="#" alt="Lettuce Wraps" class="img-responsive">
-            <h6>Lettuce Wraps</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 4</p>
-          </li>
+
 
           <li class="col-md-5">
-            <img src="#" alt="Peach Tea" class="img-responsive">
-            <h6>Homemade Peach Tea</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 2</p>
+            <img src="images/recipelettuce.jpg" alt="Lettuce Wraps" class="img-responsive">
+
+            <div class="recdesc">
+              <h6 class="col-xs-12">Lettuce Wraps</h6>
+
+              <div class="col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 4</p>
+            </div>
+
+
           </li>
+
+
+
+          <li class="col-md-5">
+            <img src="images/recipetea.jpg" alt="Peach Tea" class="img-responsive">
+
+            <div class="recdesc">
+              <h6 class="col-xs-12">Homemade Lemon Tea</h6>
+
+              <div class="col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 2</p>
+
+            </div>
+          </li>
+
+
 
           <li class="col-md-5">
             <img src="#" alt="Iced Cinnamon Mocha" class="img-responsive">
-            <h6>Iced Cinnamon Mocha</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 9</p>
+            <h6 class="col-xs-12">Iced Cinnamon Mocha</h6>
+
+            <div class="col-xs-3">
+            <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+            </div>
+
+            <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 9</p>
           </li>
           
+
+
           <li class="col-md-5">
             <img src="#" alt="Salt & Pepper Shrimp" class="img-responsive">
-            <h6>Salt & Pepper Shrimp</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 7</p>
+            <h6 class="col-xs-12">Salt & Pepper Shrimp</h6>
+
+            <div class="col-xs-3">
+            <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+            </div>
+
+            <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 7</p>
           </li>
 
         </ul>
@@ -220,7 +333,7 @@
    <footer class="col-md-12 col-xs-12">
 
       <a href="#top">
-        <img src="images/backtop.png" alt="Back to Top" class="img-responsive col-md-offset-5 col-xs-offset-5">
+        <img src="images/backtop.png" alt="Back to Top" class="img-responsive col-md-offset-5 col-xs-offset-5 backtop">
       </a>
 
         <img src="images/bitewhitelogo.png" alt="white Bite logo" class="img-responsive col-md-offset-5 col-xs-offset-4 footerlogo">
