@@ -42,7 +42,7 @@ a:hover {
 h1 {
 	font-family: Didot, Garamond, serif;
 	font-weight: bold;
-	font-size: 2.4em;
+	font-size: 2.1em;
 	line-height: 120%;
 	margin:0em;
 	padding: 0.4em 0.8em;
@@ -53,8 +53,7 @@ nav {
 }
 
 .nav-justified {
-	padding-top: 1em;
-
+	padding-top: 0.7em;
 }
 
 .navbar-header button{
@@ -75,12 +74,14 @@ nav {
 }
 
 .navbar-brand {
-	padding-left: 35px;
+	padding-top: 0.8em;
+	padding-left: 2em;
 }
+
 
 .nav>li>a {
 	color:#CA9B2C;
-	border: 5px solid transparent;
+	border: 4px solid transparent;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -90,7 +91,7 @@ nav {
 
 .nav>li>a:focus, .nav>li>a:hover {
 	background-color: #CA9B2C;
-	border: 5px solid #CA9B2C;
+	border: 4px solid #CA9B2C;
 	color:white;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -101,7 +102,7 @@ nav {
 
 .nav>li>a.active {
 	background-color: transparent;
-	border: 5px solid #CA9B2C;
+	border: 4px solid #CA9B2C;
 	color:#CA9B2C;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -171,13 +172,15 @@ h2 {
 
 #input {
     position: absolute;
+    margin-top: 0.6em;
     top:0px;
-    left: 40px;
+    left: 45px;
     width: 450px;
     height: 60px;
     z-index: 5;
     overflow: hidden;
 }
+
 input {
     display: block;
     position: absolute;
@@ -190,6 +193,7 @@ input {
     border-radius: 0;
     transition: left 0;
 }
+
 #input input:focus {
     outline: none
 }
@@ -260,7 +264,7 @@ input {
 	font-size: 1.6em;}
 
 .recipesindex li {
-	margin-bottom: 2em; 
+	margin-bottom: 2.5em; 
 }
 
 .recdesc{
@@ -316,6 +320,80 @@ footer img {
 		float:right;
 	}
 
+.pastainfo h3 {
+	font-family: Didot, Garamond, serif;
+	font-weight: bold;
+	font-size: 2.3em;
+	color:#72384B;
+}
+
+.pastainfo img {
+	margin-left: 0px;
+}
+
+.ingredients {
+	margin-top: 2em;
+	border-radius: 0.7em;
+	background-color: #ECE9E5;
+	font-family: Didot, Garamond, serif;
+	padding: 1.5em;
+	line-height: 170%;
+}
+
+.ingredients h5{
+	text-transform: uppercase;
+	font-family: Karla, arial, sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	color: #889A64;
+}
+
+.recipetext {
+	padding: 1.5em 0.8em;
+	font-size: 1.2em;
+	line-height: 160%;
+}
+
+.recipetext img{
+	margin: 1.6em 0em;
+}
+
+#recipebox {
+	padding: 1.4em;
+}
+
+#recipebox h6{
+	font-weight: 700;
+	margin-bottom: 0.8em;
+	margin-top: 0em;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: #72384B;
+}
+
+#recipebox a{
+	background-color: #72384B;
+	margin-right:5px;
+	color: #fff;
+	padding: 0.5em;
+	letter-spacing: 1px;
+}
+
+.comment {
+	font-size: #72384B;
+
+}
+
+.comment input, textarea {
+	padding: 0.5em;
+	font-size: 1.2em;
+	margin-left: 0.9em;
+	border: 2px solid #72384B;
+	margin-bottom: 1.5em;
+}
+
 
 
 
@@ -326,13 +404,14 @@ footer img {
 	font-family: Didot, Garamond, serif;
 	font-weight: bold;
 	color:white;
-	font-size: 50px;}
+	font-size: 2.8em;}
+
 
 	.webheader h1 {
-		width: 450px;
-		margin-left: 1em;
-		margin-top: -4.8em;
-		margin-bottom: 0.4em;
+		width: 10em;
+		margin-top: -6em;
+		line-height: 120%;
+		margin-bottom: 1.3em;
 	}
 
 	.homesection{
@@ -350,13 +429,13 @@ footer img {
 	}
 
 .navbar-brand {
-	padding-left: 10px;
+	padding-top: 0.6em;
+	padding-left: 4em;
 }
 
 .footer {
 	padding-top:2em;
 }
-
 
 .backtop {
 	padding-left:73px;
@@ -387,30 +466,43 @@ footer img {
 	.discovermore h3 {
 	text-align: center;
 	font-size: 2.7em;
-	padding-bottom: 0.5em;
+	padding-bottom: 0.2em;
 	margin-left: 0em;}
 
 
 	.navbar-brand {
-		padding-top: 0.6em;
+		padding: 0.6em 1.2em;
 	}
 
 	.navbar-collapse {
+		
 		margin-left:5em;
-		padding-top: 0.5em;
 		width:60%;
 	}
 
 	nav {
-	padding-bottom: 0.8em;}
+	padding-bottom: 0.9em;}
 
 	nav ul {
 		float:right;
 	}
 
-	.nav>li:nth-child(4) {
-		padding-top: 0.2em;
-	}
+	.nav>li>a { 
+		padding: 11px 15px;}
+
+	.nav-justified {
+	padding-top: 0.3em;}
+
+
+	#label {
+    width: 20px;
+    margin-left: 10px;
+    z-index: 20;}
+
+	#input {
+    margin-top: 0.9em;}
+
+
 
 .recipetop h1 {
 	margin-top: -13.5em;
@@ -426,10 +518,33 @@ footer img {
 .recdesc{
 	height: 8em;}
 
-p {
-	margin-top: 33em;
+.dropdown {
+	margin-top: 35em;}
+
+.ingredients {
+	margin-left: 0em;
+	margin-bottom: 2em;
 }
-	
+
+.pastainfo h3 {
+	font-size: 3em;
+}
+
+.pastainfo {
+	margin-top: 1.3em;
+}
+
+aside {
+	padding-left:0px;
+}
+
+#recipebox {
+	padding-left: 30px;
+	margin-bottom: 1.5em;
+	margin-top: 1em;
+}
+
+
 }
 
 

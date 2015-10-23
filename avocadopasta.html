@@ -6,8 +6,6 @@
   <meta charset = "UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- missing other meta tag? -->
-
   <title>Bite: Gourmet Made Easy</title>
 
   <link rel="icon" type="image/png" href="images/biteicon.png">
@@ -29,19 +27,29 @@
 
   <script src=“http://code.jquery.com/jquery-latest.js”></script>
   <script src="js/modernizr.custom.js"></script>
+  <script src="js/searchbar.js"></script>
   <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
 
 </head> 
 
-
-
 <body>
 
+
+
   <div class="container-fluid">
+  </div class="row">
 
-    <nav class="col-md-offset-1 col-md-10">
 
-      <div class="navbar-header col-md-offset-2 col-md-10">
+
+
+
+    <nav class="col-md-offset-1 col-md-10 row" id="top">
+
+      <a class="navbar-brand pull-left col-md-2 col-sm-2 col-xs-6 row" href="index.html">
+        <img src="images/bitelogo.png" alt="Bite logo" class="img-responsive">
+      </a>
+
+       <div class="navbar-header col-xs-6">
           <button class="navbar-toggle collapsed pull-left col-xs-1 col-sm-2" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -50,136 +58,138 @@
           </button>
       </div> <!--end Mobile Navigation-->
 
-      <a class="navbar-brand " href="index.html">
-        <img src="images/bitelogo.png" alt="Bite logo" class="img-responsive">
-      </a>
 
+      
+        <div class="collapse navbar-collapse col-xs-12" id="bs-example-navbar-collapse-1">
 
-    <div class="row">
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="list-unstyled nav nav-justified">
-              <li><a href="recipes.html">Recipes</a></li>
+              <li><a href="recipes.html" class="active">Recipes</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Travel</a></li>
 
-              <form>
-                <input type="search" placeholder="Find a recipe..."></input>
-              </form>
+              <li>
+          <form class="search" action="#" method="post">
 
-                <img src="images/searchicon.png" alt="search icon" class="img-responsive">
+            <div id="label">
+              <label for="search-terms" id="search-label">
+                <img src="images/searchicon.png" alt="search" class="img-responsive">
+              </label>
+            </div>
+
+            <div id="input" class="pull-right">
+              <input type="text" name="search" id="search" placeholder="Find a recipe...">
+            </div>
+
+          </form>
               </li>
+
           </ul> 
 
+        
         </div> <!--end Navigation Links-->
-    </div>
+
 
   </nav>
 
 
 
-  <div class="col-md-offset-1 col-md-10">
+  <img src="images/avocadopasta.jpg" alt="avocado close-up" class="img-responsive"> 
 
 
-    <img src="#" alt="avocado close-up" class="img-responsive"> 
+  <div class="col-md-offset-1 col-md-10 col-xs-12 pastainfo">
 
-    <h3>Avocado Pasta</h3>
-      <div class="ratingfill">
-      <div class="ratingempty">
-      <div class="ratingempty">
-      <i>12-15 minutes, Makes 1</i>
-
-
-
-    <section class="ingredients">
-
-      <h5>You'll Need:</h5>
-      <ul class="list-unstyled">
-        <li>3 ounces pasta of choice</li>
-        <li>1/2 avocado, pitted and peeled</li>
-        <li>1 clove garlic, smashed</li>
-        <li>Small handful of cilantro, roughly chopped</li>
-        <li>Juice of 1/4 lime (1/2 tablespoon of juice)</li>
-        <li>1 tablespoon olive oil</li>
-        <li>Salt and freshly ground pepper, to taste</li>
-        <li>1 fried egg, if desired</li>
-      </ul>
-
-    </section>
+      <div class="">
+        <h3>Avocado Pasta</h3>
+        <img src="images/pastarating.png" alt="easy rating" class="img-responsive col-xs-3 col-md-1">
+        <i class="col-md-10">12-15 minutes, Serves 1 generously</i>
+      </div>
 
 
+    <aside class="col-md-6">
 
-    <article class="recipetext">
+      <section class="ingredients">
 
-      <img src="#" alt="cilantro lime & garlic preparation" class="img-responsive col-md-5">
+        <h5>You'll Need:</h5>
+          <ul class="list-unstyled">
+            <li>3 ounces pasta of choice</li>
+            <li>1/2 avocado, pitted and peeled</li>
+            <li>1 clove garlic, smashed</li>
+            <li>Small handful of cilantro, roughly chopped</li>
+            <li>Juice of 1/4 lime (1/2 tablespoon of juice)</li>
+            <li>1 tablespoon olive oil</li>
+            <li>Salt and freshly ground pepper, to taste</li>
+            <li>Crushed red pepper, if desired</li>
+            <li>1 fried egg, if desired</li>
+         </ul>
 
-      <img src="#" alt="avocados in blender" class="img-responsive col-md-5">
-    
+      </section>
+
+    </aside>
+
+
+
+    <article class="recipetext col-xs-12 col-md-6">
+
       <p>Cook your pasta according to the package. While the pasta is cooking, add the avocado, garlic, cilantro, lime juice, and olive oil to a blender and blend well. When the pasta is cooked, save 2 tablespoons of pasta water and drain well. 
-      </p>
 
-      <p>Toss the pasta with the avocado sauce, thinning with pasta water if needed. Season with salt and pepper to taste and top with a fried egg and cilantro, if desired. Enjoy!</p>
-
-      <img src="#" alt="avocados in blender" class="img-responsive">
+      <p>Toss the pasta with the avocado sauce, thinning with the pasta water if needed. Season with salt and pepper to taste and add pinch of crushed red pepper. Top with a fried egg and cilantro if desired, and enjoy!</p>
 
     </article>
 
-  </div> <!--end recipe text-->
+    <img src="images/avocadoblender.jpg" alt="avocados in blender" class="img-responsive col-md-12">
+
+ 
+ </div>
 
   
-  <div id="recipebox">
-
+  <div id="recipebox" class="col-xs-12 col-md-offset-1 col-md-10">
     <h6>Tags:</h6> 
     <a href="#">avocado</a>
     <a href="#">pasta</a>
-    <a href="#">lunch</a>
     <a href="#">quick and easy</a>
-
   </div>
 
 
-    <form class="comment">
+    <form class="comment col-xs-10 col-md-offset-1 col-md-10">
 
-      Name:
-      <input type="name"></input>
+        <label class="col-xs-3">Name:</label>
+        <input type="name" class="col-xs-10" placeholder="Name"></input>
 
-      Comment:
-      <textarea type="name"></textarea>
+        <label class="col-xs-3">Comment:</label>
+        <textarea type="comment" class="col-xs-10" placeholder="Comment here!"></textarea>
 
     </form>
 
-
-  <div id="recipebox">
-
-    <h6>Comments (3)</h6> 
-    <p>Show</p>
-
-  </div>  
+  <div id="recipebox" class="col-xs-12 col-md-offset-1 col-md-10">
+    <h6>Comments (0)</h6> 
+  </div>
 
 
-    <footer>
 
-      <a href="#">
-        <img src="#" alt="Back to Top" class="img-responsive col-md-offset-5">
+
+  <footer class="col-md-12 col-xs-12">
+
+      <a href="#top">
+        <img src="images/backtop.png" alt="Back to Top" class="img-responsive col-md-offset-5 col-xs-offset-5 backtop">
       </a>
 
-      <a href="#">
-        <img src="#" alt="white Bite logo" class="img-responsive col-md-offset-5">
-      </a>
+        <img src="images/bitewhitelogo.png" alt="white Bite logo" class="img-responsive col-md-offset-5 col-xs-offset-4 footerlogo">
+
 
       <!--Social Media Links-->
-      <div class="social col-md-offset-3 col-sm-offset-1 col-xs-offset-1">
+      <div class="social col-md-offset-4 col-xs-offset-1">
 
-        <img src="#" alt="follow on twitter" class="img-responsive">
-        <img src="#" alt="follow on pinterest" class="img-responsive">
-        <img src="#" alt="follow on instagram" class="img-responsive">
-        <img src="#" alt="like on facebook" class="img-responsive">
-        <img src="#" alt="follow on tumblr" class="img-responsive">
-        <img src="#" alt="rss feed" class="img-responsive">
+        <img src="images/twitter.png" alt="follow on twitter" class="img-responsive">
+        <img src="images/pinterest.png" alt="follow on pinterest" class="img-responsive">
+        <img src="images/instagram.png" alt="follow on instagram" class="img-responsive">
+        <img src="images/facebook.png" alt="like on facebook" class="img-responsive">
+        <img src="images/tumblr.png" alt="follow on tumblr" class="img-responsive">
+        <img src="images/rssfeed.png" alt="rss feed" class="img-responsive">
 
       </div>
 
       <!--Footer Links-->
-      <div class="footerlinks col-md-offset-2">
+      <div class="footerlinks col-md-8 col-md-offset-2">
         <a href="#">Contact</a> |
         <a href="#">About Us</a> |
         <a href="#">Newsletter</a> |
@@ -190,13 +200,19 @@
     </footer>  
 
 
-  </div>
+  </div> <!--end container-->
+</div> <!--end row-->
+
+
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 
 </html>
-
 
