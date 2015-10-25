@@ -275,6 +275,7 @@ input {
 
 
 
+
 footer {
 	text-align: center;
 	background-color:#444444;
@@ -394,6 +395,28 @@ footer img {
 	margin-bottom: 1.5em;
 }
 
+.searchtop {
+	margin-top: 1em;
+
+}
+
+.searchtop input {
+	margin-left: -10px;
+	max-width: 100%;
+    height: 60px;
+    border: 4px solid #889A64;
+    }
+
+.searchheader {
+	font-family: Didot, Garamond, serif;
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 130%;
+
+
+}
+
+
 
 
 
@@ -408,10 +431,10 @@ footer img {
 
 
 	.webheader h1 {
-		width: 10em;
-		margin-top: -6em;
+		width: 15em;
+		margin-top: -14em;
 		line-height: 120%;
-		margin-bottom: 1.3em;
+		margin-bottom: 10.82em;
 	}
 
 	.homesection{
@@ -433,8 +456,12 @@ footer img {
 	padding-left: 4em;
 }
 
-.footer {
-	padding-top:2em;
+footer {
+	padding:4em 0em;
+}
+
+footer img{
+	padding:0.56em 0em;
 }
 
 .backtop {
@@ -446,14 +473,19 @@ footer img {
 }
 
 .social {
-	padding-left: 60px;
+	padding-left: 74px;
+}
+
+.footerlinks {
+	padding-top:0.6em;  
 }
 
 .social img {
 	display: block;
 	float:left;
 	margin-right: 10px;
-	width: 40px;
+	width: 35px;
+
 }
 
 	.discovermore{
@@ -461,7 +493,7 @@ footer img {
 	margin-left: 0em;
 	background-color: #D17B75;
 	color: white;	
-	padding: 6em 2em;}
+	padding: 5em 4em;}
 
 	.discovermore h3 {
 	text-align: center;
@@ -505,7 +537,7 @@ footer img {
 
 
 .recipetop h1 {
-	margin-top: -13.5em;
+	margin-top: -15em;
 	text-align: center;
 }
 
@@ -543,6 +575,18 @@ aside {
 	margin-bottom: 1.5em;
 	margin-top: 1em;
 }
+
+.avocadotitle {
+	margin-left: 1.4em;
+}
+
+.searchtop input {
+	margin-left: -25px;
+	max-width: 100%;
+    height: 60px;
+    border: 4px solid #889A64;
+}
+
 
 
 }
