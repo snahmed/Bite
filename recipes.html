@@ -6,7 +6,7 @@
   <meta charset = "UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Bite: Gourmet Made Easy</title>
+  <title>Recipes | Bite: Gourmet Made Easy</title>
 
   <link rel="icon" type="image/png" href="images/biteicon.png">
   <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -59,28 +59,29 @@
       </div> <!--end Mobile Navigation-->
 
 
-      
-        <div class="collapse navbar-collapse col-xs-12" id="bs-example-navbar-collapse-1">
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
           <ul class="list-unstyled nav nav-justified">
-              <li><a href="recipes.html" class="active">Recipes</a></li>
+              <li><a href="recipes.html">Recipes</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Travel</a></li>
 
               <li>
-          <form class="search" action="#" method="post">
+
+                <form id="search" action="#" method="post">
 
             <div id="label">
-              <label for="search-terms" id="search-label">
+              <label id="search-label">
                 <img src="images/searchicon.png" alt="search" class="img-responsive">
               </label>
             </div>
 
             <div id="input" class="pull-right">
-              <input type="text" name="search" id="search" placeholder="Find a recipe...">
+              <input type="text" name="search" placeholder="Find a recipe...">
             </div>
-
-          </form>
+            </form>
               </li>
 
           </ul> 
@@ -90,6 +91,9 @@
 
 
   </nav>
+
+
+
 
 
 
@@ -115,7 +119,7 @@
 
 
 
-      <div class="dropdown">
+      <div class="col-md-offset-5 dropdown">
         Sort by: 
 
         <select>

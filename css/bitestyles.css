@@ -54,6 +54,7 @@ nav {
 }
 
 .nav-justified {
+	font-size: 1.4em;
 	padding-top: 0.7em;
 }
 
@@ -66,6 +67,10 @@ nav {
 	padding:10px;
 	width:3.2em;
 	padding-bottom: 0.8em;
+}
+
+.navbar-collapse.in {
+    width: 100%;
 }
 
 .navbar-toggle .icon-bar {
@@ -190,7 +195,7 @@ input {
     border: none;
     border-bottom: 2px solid #CA9B2C;
     color: #000;
-    font-size: 18px;
+    font-size: 1em;
     backface-visibility: none;
     border-radius: 0;
     transition: left 0;
@@ -250,8 +255,7 @@ input {
 
 .dropdown {
 	padding-top: 3em;
-	margin: 3em 0em;
-	margin-left: 3em;}
+	margin: 3em 0em;}
 
 
 .dropdown select {
@@ -451,10 +455,6 @@ footer img {
 		float:right;
 	}
 
-.navbar-brand {
-	padding-top: 0.6em;
-	padding-left: 4em;
-}
 
 footer {
 	padding:4em 0em;
@@ -507,7 +507,6 @@ footer img{
 	}
 
 	.navbar-collapse {
-		
 		margin-left:5em;
 		width:60%;
 	}
@@ -515,15 +514,14 @@ footer img{
 	nav {
 	padding-bottom: 0.9em;}
 
-	nav ul {
-		float:right;
-	}
-
 	.nav>li>a { 
 		padding: 11px 15px;}
 
 	.nav-justified {
-	padding-top: 0.3em;}
+	font-size: 1em;
+	padding-top: 0.35em;
+	margin-left: 10em;
+	}
 
 
 	#label {
