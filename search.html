@@ -6,7 +6,7 @@
   <meta charset = "UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Search results for 'Non Alcoholic Beverage' | Bite: Gourmet Made Easy</title>
+  <title>Bite: Gourmet Made Easy</title>
 
   <link rel="icon" type="image/png" href="images/biteicon.png">
   <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -26,7 +26,7 @@
   <![endif]-->
 
   <script src=“http://code.jquery.com/jquery-latest.js”></script>
-  <script src="js/modernizr.custom.js"></script>
+  <script src="js/stickynav.js"></script>
   <script src="js/searchbar.js"></script>
   <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
 
@@ -43,9 +43,9 @@
 
 
 
-    <nav class="col-md-offset-1 col-md-10 row" id="top">
+    <nav class="mainnav" id="top">
 
-      <a class="navbar-brand pull-left col-md-2 col-sm-2 col-xs-6 row" href="index.html">
+      <a class="navbar-brand pull-left col-md-offset-1 col-md-2 col-sm-2 col-xs-5" href="index.html">
         <img src="images/bitelogo.png" alt="Bite logo" class="img-responsive">
       </a>
 
@@ -72,16 +72,17 @@
 
                 <form id="search" action="#" method="post">
 
-            <div id="label">
-              <label id="search-label">
-                <img src="images/searchicon.png" alt="search" class="img-responsive">
-              </label>
-            </div>
+                  <div id="label">
+                    <label id="search-label">
+                      <img src="images/searchicon.png" alt="search" class="img-responsive">
+                    </label>
+                  </div>
 
-            <div id="input" class="pull-right">
-              <input type="text" name="search" placeholder="Find a recipe...">
-            </div>
-            </form>
+                  <div id="input">
+                      <input type="text" name="search" placeholder="Find a recipe...">
+                    </div>
+                </form>
+
               </li>
 
           </ul> 
@@ -95,7 +96,8 @@
 
 
 
-  <div class="col-md-offset-1 col-md-10 col-xs-12">
+
+  <div class="col-md-offset-1 col-md-10">
 
     <div class="searchtop">
 
@@ -104,7 +106,7 @@
 
           <img src="images/searchiconbox.png" alt="search" class="img-responsive col-xs-3 col-md-offset-3 col-md-1">
 
-          <input class="col-xs-9 col-md-5" type="search" placeholder="Non-Alcoholic beverages"></input>
+          <input type="text" name="search" placeholder="Non-alcoholic drinks" class="col-xs-9 col-md-5">
 
         </form>
 
@@ -113,12 +115,12 @@
 
 
 
-    <h3 class="searchheader col-xs-12">Found 14 results for 'Non-alcoholic drinks'</h3>
+    <h3 class="searchheader col-xs-12">Found 4 results for 'Non-alcoholic drinks'</h3>
 
 
 
 
-    <aside class="dropdown col-xs-12">
+    <aside class="searchdropdown col-xs-12">
     	Sort results by:
     	<select>
           <option value="Course">Relevance</option>
@@ -129,45 +131,89 @@
     </aside>
 
 
-    <ul class="list-unstyled">
-          <li class="col-md-5">
-            <img src="#" alt="Blueberry Ginger Ale" class="img-responsive">
-            <h6>Blueberry Ginger Ale</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 11</p>
+    <ul class="list-unstyled searchresults">
+
+
+
+          <li class="col-md-4">
+            <img src="images/recipegingerale.jpg" alt="Blueberry Ginger Ale" class="img-responsive">
+
+
+          <div class="searchdesc">
+            <h6 class="col-xs-12">Blueberry Ginger Ale</h6>
+
+              <div class="col-xs-offset-4 col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 11</p>
+
+          </div>
+
           </li>
 
-          <li class="col-md-5">
-            <img src="#" alt="Rosemary Soda" class="img-responsive">
-            <h6>Rosemary Soda</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 17</p>
+
+          <li class="col-md-4">
+            <img src="images/recipesoda.jpg" alt="Rosemary Soda" class="img-responsive">
+
+            <div class="searchdesc">
+              <h6 class="col-xs-12">Rosemary Soda</h6>
+
+              <div class="col-xs-offset-4 col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 17</p>
+
+            </div>
+
           </li>
 
-          <li class="col-md-5">
-            <img src="#" alt="Peach Tea" class="img-responsive">
-            <h6>Homemade Peach Tea</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 2</p>
+
+
+
+          <li class="col-md-4">
+            <img src="images/recipetea.jpg" alt="Peach Tea" class="img-responsive">
+
+            <div class="searchdesc">
+              <h6 class="col-xs-12">Homemade Lemon Tea</h6>
+
+              <div class="col-xs-offset-4 col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 2</p>
+
+            </div>
           </li>
 
-          <li class="col-md-5">
-            <img src="#" alt="Iced Cinnamon Mocha" class="img-responsive">
-            <h6>Iced Cinnamon Mocha</h6>
-            <img src="#" alt="Rating: Easy" class="img-responsive">
-            <img src="#" alt="Comment bubble" class="img-responsive"> 9</p>
-          </li>
-    
 
+
+
+          <li class="col-md-4">
+            <img src="images/recipemocha.jpg" alt="Iced Cinnamon Mocha" class="img-responsive">
+
+            <div class="searchdesc">
+              <h6 class="col-xs-12">Iced Cinnamon Mocha</h6>
+
+              <div class="col-xs-offset-4 col-xs-3">
+                <img src="images/ratingeasy.png" alt="Rating: Easy" class="img-responsive"> Easy
+              </div>
+
+              <img src="images/comment.png" alt="Comment bubble" class="img-responsive"> 9</p>
+
+            </div>
+          </li>
+
+
+
+
+    </ul>
 
   </div>
 
 
   <footer class="col-md-12 col-xs-12">
-
-      <a href="#top">
-        <img src="images/backtop.png" alt="Back to Top" class="img-responsive col-md-offset-5 col-xs-offset-5 backtop">
-      </a>
 
         <img src="images/bitewhitelogo.png" alt="white Bite logo" class="img-responsive col-md-offset-5 col-xs-offset-4 footerlogo">
 

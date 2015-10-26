@@ -48,46 +48,56 @@ h1 {
 	margin:0em;
 	padding: 0.4em 0.8em;
 }
+	
+.main-nav, nav{
+  	position: relative;
+  	z-index: 150;}
 
-nav {
-	padding-bottom: 1em;
+
+.mainnav-scrolled, nav {
+  	position: fixed;
+  	width: 100%;
+  	z-index: 150;
 }
 
 .nav-justified {
 	font-size: 1.4em;
-	padding-top: 0.7em;
+	padding-top: 4em;
+	padding-bottom: 1em;
 }
 
-.navbar-header button{
-	margin-top: 13px;
-	width: 30%;
+nav {
+	background-color: white;
+	padding: 0em;
+}
+
+.navbar-header {
+	padding-left: 0em;
 }
 
 .navbar-toggle{
-	padding:10px;
+	padding-top:0.8em;
 	width:3.2em;
-	padding-bottom: 0.8em;
+	padding-bottom: 1em;
 }
 
 .navbar-collapse.in {
-    width: 100%;
+    overflow-y:visible;
 }
 
 .navbar-toggle .icon-bar {
-	margin-top: 0.6em;
+	margin-top: 0.2em;
 	width:1.8em;
 	height:6px;
 }
 
 .navbar-brand {
-	padding-top: 0.8em;
-	padding-left: 2em;
-}
+	padding: 0.5em 1em;}
 
 
 .nav>li>a {
 	color:#CA9B2C;
-	border: 4px solid transparent;
+	border: 3px solid transparent;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -97,7 +107,7 @@ nav {
 
 .nav>li>a:focus, .nav>li>a:hover {
 	background-color: #CA9B2C;
-	border: 4px solid #CA9B2C;
+	border: 3px solid #CA9B2C;
 	color:white;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -108,8 +118,8 @@ nav {
 
 .nav>li>a.active {
 	background-color: transparent;
-	border: 4px solid #CA9B2C;
-	color:#CA9B2C;
+	border: 3px solid white;
+	color:white;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -173,7 +183,7 @@ h2 {
 
 
 #label {
-    width: 20px;
+    width: 25px;
     margin-left: 10px;
     z-index: 20;}
 
@@ -182,7 +192,7 @@ h2 {
     margin-top: 0.6em;
     top:0px;
     left: 45px;
-    width: 450px;
+    width: 300px;
     height: 60px;
     z-index: 5;
     overflow: hidden;
@@ -255,16 +265,18 @@ input {
 
 .dropdown {
 	padding-top: 3em;
-	margin: 3em 0em;}
+	margin: 2em 0em;}
 
 
 .dropdown select {
+	font-size: 1.2em;
 	width: auto;
 	margin-left: 8px;
-	padding: 1em;
+	padding: 2em;
 	border: 2px solid #889A64;
 	border-radius: 0%;
 }
+
 
 .recipesindex h6 {
 	font-family: Didot;
@@ -287,8 +299,8 @@ footer {
 	text-align: center;
 	background-color:#444444;
 	color: white;
-	padding-top: 2em;
-	padding-bottom: 3em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	padding-left: 2em;
 }
 
@@ -357,6 +369,11 @@ footer img {
 	color: #889A64;
 }
 
+#recipephoto img{
+	margin-top: 2em;
+}
+
+
 .recipetext {
 	padding: 1.5em 0.8em;
 	font-size: 1.2em;
@@ -403,15 +420,18 @@ footer img {
 }
 
 .searchtop {
-	margin-top: 1em;
+	margin-top: 7em;
 }
 
 .searchtop input {
-	margin-left: -10px;
+	margin-left: -18px;
+	font-size: 1.2em;
+	color: black;
 	max-width: 100%;
-    height: 60px;
+    height: 63px;
     border: 4px solid #889A64;
     }
+
 
 .searchheader {
 	font-family: Didot, Garamond, serif;
@@ -419,6 +439,44 @@ footer img {
 	font-weight: 700;
 	line-height: 130%;
 }
+
+.searchdesc {
+	padding-top: 0.8em;
+	padding-left: 0em;
+}
+
+.ratingsearch {
+	padding-left: 2em;
+}
+
+.searchresults h6{
+	font-family: Didot, Garamond, serif;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 130%;}
+
+.searchresults li{
+	margin-bottom: 3em;
+}
+
+.searchdropdown{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.searchdropdown select {
+	font-size: 1.2em;
+	width: auto;
+	margin-left: 8px;
+	padding: 2em;
+	border: 2px solid #889A64;
+	border-radius: 0%;
+}
+
+
+
+
+
 
 
 
@@ -436,9 +494,9 @@ footer img {
 
 	.webheader h1 {
 		width: 15em;
-		margin-top: -14em;
+		margin-top: -14.5em;
 		line-height: 120%;
-		margin-bottom: 10.82em;
+		margin-bottom: 11.33em;
 	}
 
 	.homesection{
@@ -457,7 +515,7 @@ footer img {
 
 
 footer {
-	padding:4em 0em;
+	padding:5em 0em;
 }
 
 footer img{
@@ -503,39 +561,40 @@ footer img{
 
 
 	.navbar-brand {
-		padding: 0.6em 1.2em;
+		padding: 0.6em 2.5em;
+		left:-15px;
 	}
 
-	.navbar-collapse {
-		margin-left:5em;
-		width:60%;
+	.navbar-collapse {	
+		width: 100%;
 	}
-
-	nav {
-	padding-bottom: 0.9em;}
 
 	.nav>li>a { 
-		padding: 11px 15px;}
+		padding: 0.8em 3em;}
+
+	.nav>li {
+		width: 10em;
+		padding-left: 3em;
+	}
 
 	.nav-justified {
 	font-size: 1em;
-	padding-top: 0.35em;
-	margin-left: 10em;
+	padding-top: 0.2em;
 	}
-
 
 	#label {
     width: 20px;
-    margin-left: 10px;
-    z-index: 20;}
+    z-index: 20;
+	margin-left: 0px;}
 
 	#input {
-    margin-top: 0.9em;}
-
+    margin-top: 0.9em;
+	margin-left: 2em;
+	}
 
 
 .recipetop h1 {
-	margin-top: -15em;
+	margin-top: -14.5em;
 	text-align: center;
 }
 
@@ -549,12 +608,11 @@ footer img{
 	height: 8em;}
 
 .dropdown {
-	margin-top: 37em;
-	padding:2.5em 0em;}
+	margin-top: 30em;}
+
 
 .ingredients {
 	margin-left: 0em;
-	margin-bottom: 2em;
 }
 
 .pastainfo h3 {
@@ -565,24 +623,30 @@ footer img{
 	margin-top: 1.3em;
 }
 
+
 aside {
 	padding-left:0px;
 }
 
 #recipebox {
 	padding-left: 30px;
-	margin-bottom: 1.5em;
+	margin-bottom: 0.6em;
 	margin-top: 1em;
 }
 
 .avocadotitle {
-	margin-left: 1.4em;
+	margin-left: 1.5em;
+	padding-bottom: 1em;
+}
+
+.avocadotitle img{
+	padding-left: 0em;
 }
 
 .searchtop input {
-	margin-left: -25px;
+	margin-left: -15px;
 	max-width: 100%;
-    height: 60px;
+    height: 56px;
     border: 4px solid #889A64;
 }
 

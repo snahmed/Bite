@@ -6,7 +6,7 @@
   <meta charset = "UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Avocado Pasta | Bite: Gourmet Made Easy</title>
+  <title>Bite: Gourmet Made Easy</title>
 
   <link rel="icon" type="image/png" href="images/biteicon.png">
   <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -26,7 +26,7 @@
   <![endif]-->
 
   <script src=“http://code.jquery.com/jquery-latest.js”></script>
-  <script src="js/modernizr.custom.js"></script>
+  <script src="js/stickynav.js"></script>
   <script src="js/searchbar.js"></script>
   <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
 
@@ -43,9 +43,9 @@
 
 
 
-    <nav class="col-md-offset-1 col-md-10 row" id="top">
+    <nav class="mainnav" id="top">
 
-      <a class="navbar-brand pull-left col-md-2 col-sm-2 col-xs-6 row" href="index.html">
+      <a class="navbar-brand pull-left col-md-offset-1 col-md-2 col-sm-2 col-xs-5" href="index.html">
         <img src="images/bitelogo.png" alt="Bite logo" class="img-responsive">
       </a>
 
@@ -72,16 +72,17 @@
 
                 <form id="search" action="#" method="post">
 
-            <div id="label">
-              <label id="search-label">
-                <img src="images/searchicon.png" alt="search" class="img-responsive">
-              </label>
-            </div>
+                  <div id="label">
+                    <label id="search-label">
+                      <img src="images/searchicon.png" alt="search" class="img-responsive">
+                    </label>
+                  </div>
 
-            <div id="input" class="pull-right">
-              <input type="text" name="search" placeholder="Find a recipe...">
-            </div>
-            </form>
+                  <div id="input">
+                      <input type="text" name="search" placeholder="Find a recipe...">
+                    </div>
+                </form>
+
               </li>
 
           </ul> 
@@ -95,7 +96,6 @@
 
 
 
-
   <img src="images/avocadopasta.jpg" alt="avocado close-up" class="img-responsive"> 
 
 
@@ -104,11 +104,11 @@
       <div class="avocadotitle">
         <h3>Avocado Pasta</h3>
         <img src="images/pastarating.png" alt="easy rating" class="img-responsive col-xs-3 col-md-1">
-        <i class="col-md-10">12-15 minutes, Serves 1 generously</i>
+        <i>12-15 minutes, Serves 1 generously</i>
       </div>
 
 
-    <aside class="col-md-6">
+    <aside class="col-md-5">
 
       <section class="ingredients">
 
@@ -130,8 +130,8 @@
     </aside>
 
 
-
-    <article class="recipetext col-xs-12 col-md-6">
+    
+    <article class="recipetext col-xs-12 col-md-7">
 
       <p>Cook your pasta according to the package. While the pasta is cooking, add the avocado, garlic, cilantro, lime juice, and olive oil to a blender and blend well. When the pasta is cooked, save 2 tablespoons of pasta water and drain well. 
 
@@ -139,7 +139,18 @@
 
     </article>
 
-    <img src="images/avocadoblender.jpg" alt="avocados in blender" class="img-responsive col-md-12">
+
+
+
+    <div id="recipephoto">
+
+      <img src="images/avocadocounter.jpg" alt="avocados in blender" class="img-responsive col-md-8">
+
+      <img src="images/avocadoblend.jpg" alt="avocados in blender" class="img-responsive col-md-4">
+
+    </div>
+
+    
 
  
  </div>
@@ -171,10 +182,6 @@
 
 
   <footer class="col-md-12 col-xs-12">
-
-      <a href="#top">
-        <img src="images/backtop.png" alt="Back to Top" class="img-responsive col-md-offset-5 col-xs-offset-5 backtop">
-      </a>
 
         <img src="images/bitewhitelogo.png" alt="white Bite logo" class="img-responsive col-md-offset-5 col-xs-offset-4 footerlogo">
 

@@ -6,7 +6,7 @@
   <meta charset = "UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Recipes | Bite: Gourmet Made Easy</title>
+  <title>Bite: Gourmet Made Easy</title>
 
   <link rel="icon" type="image/png" href="images/biteicon.png">
   <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -26,7 +26,7 @@
   <![endif]-->
 
   <script src=“http://code.jquery.com/jquery-latest.js”></script>
-  <script src="js/modernizr.custom.js"></script>
+  <script src="js/stickynav.js"></script>
   <script src="js/searchbar.js"></script>
   <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
 
@@ -43,9 +43,9 @@
 
 
 
-    <nav class="col-md-offset-1 col-md-10 row" id="top">
+    <nav class="mainnav" id="top">
 
-      <a class="navbar-brand pull-left col-md-2 col-sm-2 col-xs-6 row" href="index.html">
+      <a class="navbar-brand pull-left col-md-offset-1 col-md-2 col-sm-2 col-xs-5" href="index.html">
         <img src="images/bitelogo.png" alt="Bite logo" class="img-responsive">
       </a>
 
@@ -72,16 +72,17 @@
 
                 <form id="search" action="#" method="post">
 
-            <div id="label">
-              <label id="search-label">
-                <img src="images/searchicon.png" alt="search" class="img-responsive">
-              </label>
-            </div>
+                  <div id="label">
+                    <label id="search-label">
+                      <img src="images/searchicon.png" alt="search" class="img-responsive">
+                    </label>
+                  </div>
 
-            <div id="input" class="pull-right">
-              <input type="text" name="search" placeholder="Find a recipe...">
-            </div>
-            </form>
+                  <div id="input">
+                      <input type="text" name="search" placeholder="Find a recipe...">
+                    </div>
+                </form>
+
               </li>
 
           </ul> 
@@ -106,11 +107,11 @@
 
         <form id="search" action="#" method="post">
 
-          <label for="search-terms" type="button"  id="search-label" class="col-xs-3 col-md-offset-3 col-md-1">
+          <label for="search-terms" id="search-label" class="col-xs-3 col-md-offset-3 col-md-1">
             <img src="images/searchiconbox.png" alt="search" class="img-responsive">
           </label>
 
-          <input type="text" name="search" id="search" placeholder="Find a recipe..." class="col-xs-9 col-md-5">
+          <input type="text" name="search" placeholder="Find a recipe..." class="col-xs-9 col-md-5">
 
         </form>
 
@@ -119,7 +120,7 @@
 
 
 
-      <div class="col-md-offset-5 dropdown">
+      <div class="col-md-5 dropdown">
         Sort by: 
 
         <select>
@@ -347,11 +348,6 @@
 
 
    <footer class="col-md-12 col-xs-12">
-
-      <a href="#top">
-        <img src="images/backtop.png" alt="Back to Top" class="img-responsive col-md-offset-5 col-xs-offset-5 backtop">
-      </a>
-
         <img src="images/bitewhitelogo.png" alt="white Bite logo" class="img-responsive col-md-offset-5 col-xs-offset-4 footerlogo">
 
 
