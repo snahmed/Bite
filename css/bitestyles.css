@@ -73,6 +73,7 @@ h1 {
 nav {
 	background-color: white;
 	padding: 0em;
+	border-bottom: 2px solid #CA9B2C;
 }
 
 .navbar-header {
